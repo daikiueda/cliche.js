@@ -1,0 +1,54 @@
+	html, body {
+		height: 100%;
+	}
+	body {
+		margin: 0; padding: 0;
+		background: #eee;
+		
+		color: #333;
+		font-size: 0.875em;
+		line-height: 1.5em;
+	}
+	article {
+		width: 860px;
+		min-height: 100%;
+
+		padding: 0 40px;
+		margin: 0 auto;
+		
+		background: #fff;
+		box-shadow: 0 0 20px #ccc;
+	}
+
+	h1 {
+		margin: 0 0 1.5em;
+		padding: 1.5em 0 0;
+		
+		font-size: 3em;
+		font-family: serif;
+	}
+
+	article > section {
+		margin: 3em 0;
+		padding: 1.5em 0;
+		border-top: double 3px #ccc;
+	}
+	article > section:last-child {
+		margin-bottom: 0;
+	}
+
+	article > section > section {
+		border-top: solid 1px #f0f0f0;
+		box-shadow: 0 -1px #ccc;
+		
+		margin: 3em 0;
+		padding: 1.5em 40px 0;
+	}
+	article > section > section h3 {
+		margin-right: -40px;
+		margin-left: -40px;
+		
+		border-left: solid 35px #eee;
+		padding-left: 5px;
+	}
+

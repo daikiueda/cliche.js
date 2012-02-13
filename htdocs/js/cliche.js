@@ -9,8 +9,11 @@
 
 	/* Do not change the variable name */
 	var required = [
-		"source/rollover.js",
-		"source/foundation.js"
+		"source/env/jquery.jsCapability.js",
+		"source/env/jquery.uaDetection.js",
+		
+		"source/ui/jquery.inPageLink.js",
+		"source/ui/jquery.imgRollOver.js"
 	];
 
 	(function(){

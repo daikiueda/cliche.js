@@ -1,16 +1,67 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
- "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html lang="ja">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta http-equiv="Content-Style-Type" content="text/css">
-		<meta http-equiv="Content-Script-Type" content="text/javascript">
-
-		<title>Cliche.js</title>
-
-		<script type="text/javascript" src="js/cliche.js"></script>
+		<meta charset="UTF-8">
+		<title>cliche.js</title>
+		<link rel="stylesheet" href="sample_resources/css/index.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="js/cliche.js"></script>
 	</head>
 	<body>
-		test
+		<article>
+			<h1>cliche.js</h1>
+			
+			<p><a href="js/cliche.js">js/cliche.js</a></p>
+			
+			<section id="env">
+				<h2>ブラウズ環境</h2>
+				
+				<section id="jsCapability">
+					<h3>env/jsCapability.js</h3>
+					<p>JavaScriptが有効な環境の場合に、下記のclassをbody要素に付与します。</p>
+					<ul>
+						<li>body.jsCapable</li>
+					</ul>
+				</section>
+
+				<section id="uaDetection">
+					<h3>env/uaDetection.js</h3>
+					<p>UAを判別し、下記のclassをbody要素に付与します。</p>
+					<ul>
+						<li>body.ua_iOS</li>
+						<li>body.ua_PC</li>
+						<li>body.ua_Mac</li>
+						<li>body.ua_Win</li>
+					</ul>
+				</section>
+			</section>
+			
+			<section id="ui">
+				<h2>ユーザーインターフェース</h2>
+				
+				<section id="inPageLink">
+					<h3>ui/jquery.inPageLink.js</h3>
+					<p>ページ内リンクに、目標位置へスクロールする演出を追加します。</p>
+					
+					<section class="sample">
+						<h4>サンプル</h4>
+						<ul>
+							<li><a href="#inPageLink">#inPageLink</a></li>
+							<li><a href="#imgRollOver">#imgRollOver</a></li>
+						</ul>
+					</section>
+				</section>
+
+				<section id="imgRollOver">
+					<h3>ui/jquery.imgRollOver.js</h3>
+					<p>&lt;a&gt;の子要素の画像に、ロールオーバーの演出を追加します。</p>
+					
+					<section class="sample">
+						<h4>サンプル</h4>
+					</section>
+				</section>
+			</section>
+			
+		</article>
 	</body>
 </html>
