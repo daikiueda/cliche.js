@@ -11,11 +11,23 @@
 	var SCROLL_VELOCITY =  0.6;
 
 	/** スクロール時間の最短（ms） */
-	var MIN_DURATION =  400;
+	var MIN_DURATION =  750;
 
 	/** スクロール時間の最長（ms） */
-	var MAX_DURATION = 1000;
+	var MAX_DURATION = 2000;
 
+
+	/**
+	 * $.easingの拡張
+	 * @see http://gsgd.co.uk/sandbox/jquery/easing/
+	 */
+	$.extend( $.easing,
+		{
+			easeOutQuint: function (x, t, b, c, d) {
+				return c*((t=t/d-1)*t*t*t*t + 1) + b;
+			}
+		}
+	);
 
 	/* ページ内リンク */
 	$.fn.inPageLink = function(){
@@ -41,8 +53,10 @@
 				animateTime = Math.max( animateTime, MIN_DURATION );
 				animateTime = Math.min( animateTime, MAX_DURATION );
 
-				$("html,body").animate({ scrollTop: targetPos }, animateTime, "swing", function(){
-					location.hash = targetId;
+				$("html,body").animate({ scrollTop: targetPos }, animateTime, "easeOutQuint", function(){
+					setTimeout( function(){
+						location.href = location.href.replace(/(#.+|)$/,targetId);
+					}, 100 );
 				});
 				
 				return false;
@@ -54,7 +68,7 @@
 	/**
 	 * 初期表示処理
 	 */
-	$( document ).ready( function(){
+	$( function(){
 		$( "a[href]" ).inPageLink();
-	});
+	} );
 })();

@@ -1,5 +1,5 @@
 /**
- * ui/jquery.imgRollOver
+ * ui/jquery.imgRollOver.js
  * <a>の子要素の画像に、ロールオーバー効果を追加します。
  */
 
@@ -41,11 +41,11 @@
 			$(this)
 				.mouseenter( function(){
 					$( "img.hover", this ).animate( { opacity: 1 }, 150 );
-					//$( "img.default", this ).animate( { opacity: 0 }, 150 );
+					$( "img.default", this ).animate( { opacity: 0 }, 150 );
 				} )
 				.mouseleave( function(){
 					$( "img.hover", this ).animate( { opacity: 0 }, 150 );
-					//$( "img.default", this ).animate( { opacity: 1 }, 150 );
+					$( "img.default", this ).animate( { opacity: 1 }, 150 );
 				} )
 		})
 	}
@@ -54,7 +54,7 @@
 	/**
 	 * 初期表示処理
 	 */
-	$(document).ready( function(){
+	$( function(){
 		$( "a[href]" ).imgRollOver();
-	});
+	} );
 })();

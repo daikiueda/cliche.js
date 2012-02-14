@@ -4,12 +4,15 @@
 		<meta charset="UTF-8">
 		<title>cliche.js</title>
 		<link rel="stylesheet" href="sample_resources/css/index.css">
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script src="js/cliche.js"></script>
 	</head>
 	<body>
 		<article>
-			<h1>cliche.js</h1>
+			<h1 id="page_top">cliche.js</h1>
 			
 			<p><a href="js/cliche.js">js/cliche.js</a></p>
 			
@@ -46,8 +49,7 @@
 					<section class="sample">
 						<h4>サンプル</h4>
 						<ul>
-							<li><a href="#inPageLink">#inPageLink</a></li>
-							<li><a href="#imgRollOver">#imgRollOver</a></li>
+							<li><a href="#page_top">#page_top</a></li>
 						</ul>
 					</section>
 				</section>
@@ -58,10 +60,24 @@
 					
 					<section class="sample">
 						<h4>サンプル</h4>
+						<p style="float: left; margin-right: 20px;"><a href="#"><img src="sample_resources/images/button_off.gif" width="240" height="60" alt="button"></a></p>
+						<p style="float: left;"><a href="#"><img src="sample_resources/images/button_off.gif" width="240" height="60" alt="button"></a></p>
+						<p style="clear: left; "><a href="#"><img src="sample_resources/images/button_off.gif" width="240" height="60" alt="button"></a></p>
+						<p style="position:absolute; margin-top: -80px; margin-left: 260px;"><a href="#"><img src="sample_resources/images/button_off.gif" width="240" height="60" alt="button"></a></p>
 					</section>
 				</section>
 			</section>
 			
+			<section id="event">
+				<h2>イベント</h2>
+				
+				<section id="triggerOnFontSizeChange">
+					<h3>event/jquery.triggerOnFontSizeChange.js</h3>
+					<p>フォントサイズの変更を検知し、body要素のfontSizeChangeイベントを発行します。</p>
+					<script type="text/javascript">
+						$( document.body ).bind( "fontSizeChange", function(){ alert("フォントサイズが変更されました") } );
+					</script>
+				</section>
 		</article>
 	</body>
 </html>

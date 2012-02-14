@@ -13,7 +13,9 @@
 		"source/env/jquery.uaDetection.js",
 		
 		"source/ui/jquery.inPageLink.js",
-		"source/ui/jquery.imgRollOver.js"
+		"source/ui/jquery.imgRollOver.js",
+		
+		"source/event/jquery.triggerOnFontSizeChange.js"
 	];
 
 	(function(){
