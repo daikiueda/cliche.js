@@ -1,3 +1,14 @@
+@charset "UTF-8";
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+cliche.js 解説ページ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+/* =========================================================
+■解説全体のレイアウトやスタイル
+========================================================= */
+/* -------------------------------------
+▽枠組み
+------------------------------------- */
 	html, body {
 		height: 100%;
 	}
@@ -20,6 +31,9 @@
 		box-shadow: 0 0 20px #ccc;
 	}
 
+/* -------------------------------------
+▽ページタイトル
+------------------------------------- */
 	h1 {
 		margin: 0 0 1.5em;
 		padding: 1.5em 0 0;
@@ -28,6 +42,9 @@
 		font-family: serif;
 	}
 
+/* -------------------------------------
+▽セクショニング
+------------------------------------- */
 	article > section {
 		margin: 3em 0;
 		padding: 1.5em 0;
@@ -52,6 +69,46 @@
 		padding-left: 5px;
 	}
 
+/* -------------------------------------
+▽汎用要素
+------------------------------------- */
 	img {
 		border: none;
 	}
+
+
+/* =========================================================
+■個別のサンプルのレイアウトやスタイル
+========================================================= */
+/* -------------------------------------
+▽スタイル＞
+------------------------------------- */
+	#displayBox .container {
+		zoom: 1;
+	}
+	#displayBox .container:after {
+		content: ".";
+		height: 0; display: block; visibility: hidden;
+		clear: both;
+	}
+	#displayBox .container .box {
+		float: left;
+		margin: 0 20px 20px 0;
+		padding: 19px;
+		border: solid 1px #ccc;
+	}
+	#displayBox .container .box p {
+		margin-bottom: 0;
+	}
+	#displayBox .container .box .heading {
+		margin: -19px -19px 1em;
+		padding: 19px;
+		background: #f0f0f0;
+	}
+	#displayBox .container .box .heading span {
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 1.334;
+	}
+
+

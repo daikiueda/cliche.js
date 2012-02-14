@@ -1,18 +1,18 @@
 /**
  * event/jquery.triggerOnFontSizeChange.js
- * �t�H���g�T�C�Y�̕ύX�����m���Abody�v�f��fontSizeChange�C�x���g�𔭍s���܂��B
+ * フォントサイズの変更を検知し、body要素のfontSizeChangeイベントを発行します。
  */
 
 (function(){
 	/**
-	 * �ݒ荀��
+	 * 設定項目
 	 */
-	/** ���m�̊Ԋu�ims�j */
+	/** 検知の間隔（ms） */
 	var TEST_INTERVAL =  200;
 
 
 	/**
-	 * �����\������
+	 * 初期表示処理
 	 */
 	$( function(){
 		var fontSizeWatcher =

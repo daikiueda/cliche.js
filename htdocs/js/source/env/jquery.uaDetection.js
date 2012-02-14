@@ -1,6 +1,6 @@
 /**
  * env/jquery.uaDetection.js
- * UA‚ð”»•Ê‚µA‰º‹L‚Ìclass‚ðbody—v‘f‚É•t—^‚µ‚Ü‚·B
+ * UAã‚’åˆ¤åˆ¥ã—ã€ä¸‹è¨˜ã®classã‚’bodyè¦ç´ ã«ä»˜ä¸Žã—ã¾ã™ã€‚
  * - body.ua_iOS
  * - body.ua_PC
  * - body.ua_Mac
@@ -10,7 +10,7 @@
 (function(){
 
 	/**
-	 * ‰Šú•\Ž¦ˆ—
+	 * åˆæœŸè¡¨ç¤ºå‡¦ç†
 	 */
 	$( function(){
 		var ua =navigator.userAgent;

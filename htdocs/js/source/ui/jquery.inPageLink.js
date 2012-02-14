@@ -1,24 +1,24 @@
 /**
  * ui/jquery.inPageLink.js
- * ƒy[ƒW“àƒŠƒ“ƒN‚ÉA–Ú•WˆÊ’u‚Ö‚ÌƒXƒNƒ[ƒ‹Œø‰Ê‚ğ’Ç‰Á‚µ‚Ü‚·B
+ * ãƒšãƒ¼ã‚¸å†…ãƒªãƒ³ã‚¯ã«ã€ç›®æ¨™ä½ç½®ã¸ã®ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«åŠ¹æœã‚’è¿½åŠ ã—ã¾ã™ã€‚
  */
 
 (function(){
 	/**
-	 * İ’è€–Ú
+	 * è¨­å®šé …ç›®
 	 */
-	/** 1ms•b–ˆ‚ÌˆÚ“®‹——£ipxj */
+	/** 1msç§’æ¯ã®ç§»å‹•è·é›¢ï¼ˆpxï¼‰ */
 	var SCROLL_VELOCITY =  0.6;
 
-	/** ƒXƒNƒ[ƒ‹ŠÔ‚ÌÅ’Zimsj */
+	/** ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«æ™‚é–“ã®æœ€çŸ­ï¼ˆmsï¼‰ */
 	var MIN_DURATION =  750;
 
-	/** ƒXƒNƒ[ƒ‹ŠÔ‚ÌÅ’·imsj */
+	/** ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«æ™‚é–“ã®æœ€é•·ï¼ˆmsï¼‰ */
 	var MAX_DURATION = 2000;
 
 
 	/**
-	 * $.easing‚ÌŠg’£
+	 * $.easingã®æ‹¡å¼µ
 	 * @see http://gsgd.co.uk/sandbox/jquery/easing/
 	 */
 	$.extend( $.easing,
@@ -29,7 +29,7 @@
 		}
 	);
 
-	/* ƒy[ƒW“àƒŠƒ“ƒN */
+	/* ãƒšãƒ¼ã‚¸å†…ãƒªãƒ³ã‚¯ */
 	$.fn.inPageLink = function(){
 		if( !$("html,body").animate ){
 			return this;
@@ -38,7 +38,7 @@
 		return this.each( function(){
 			if( !this.href.match(/#.+$/) ) return;
 			
-			/* ƒy[ƒW“àƒŠƒ“ƒN‚ªƒNƒŠƒbƒN‚³‚ê‚½Û‚Ìˆ— */
+			/* ãƒšãƒ¼ã‚¸å†…ãƒªãƒ³ã‚¯ãŒã‚¯ãƒªãƒƒã‚¯ã•ã‚ŒãŸéš›ã®å‡¦ç† */
 			$(this).click( function(){
 				var targetId = this.href.match(/#.+$/)[0];
 
@@ -66,7 +66,7 @@
 
 
 	/**
-	 * ‰Šú•\¦ˆ—
+	 * åˆæœŸè¡¨ç¤ºå‡¦ç†
 	 */
 	$( function(){
 		$( "a[href]" ).inPageLink();

@@ -1,11 +1,11 @@
 /**
  * ui/jquery.imgRollOver.js
- * <a>�̎q�v�f�̉摜�ɁA���[���I�[�o�[���ʂ�ǉ����܂��B
+ * <a>の子要素の画像に、ロールオーバー効果を追加します。
  */
 
 (function(){
 
-	/* �摜�̃��[���I�[�o�[ */
+	/* 画像のロールオーバー */
 	$.fn.imgRollOver = function(){
 		if( !$("html,body").animate ){
 			return this;
@@ -52,7 +52,7 @@
 
 
 	/**
-	 * �����\������
+	 * 初期表示処理
 	 */
 	$( function(){
 		$( "a[href]" ).imgRollOver();
