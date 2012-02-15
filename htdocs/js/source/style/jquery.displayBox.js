@@ -72,7 +72,11 @@
 			
 			testOffsetTop = $( testElm ).offset().top;
 			
-			if( currentPos === testOffsetTop ){
+			// 基準値との差が微少な場合は、同列の要素とする。
+			// currentPos === testOffsetTop で判定した場合に、
+			// 小数点レベルの差異が見られることがあったので、
+			// 条件を変更。
+			if( Math.abs( currentPos - testOffsetTop ) < 1 ){
 				targetElms.push( testElm );
 			}
 			else {

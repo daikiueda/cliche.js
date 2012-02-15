@@ -38,7 +38,7 @@ cliche.js 解説ページ
 		margin: 0 0 1.5em;
 		padding: 1.5em 0 0;
 		
-		font-size: 3em;
+		font-size: 3.429em;
 		font-family: serif;
 	}
 
@@ -52,6 +52,9 @@ cliche.js 解説ページ
 	}
 	article > section:last-child {
 		margin-bottom: 0;
+	}
+	article > section h2 {
+		font-size: 1.715em;
 	}
 
 	article > section > section {
@@ -85,11 +88,14 @@ cliche.js 解説ページ
 ------------------------------------- */
 	#displayBox .container {
 		zoom: 1;
+		margin-bottom: 20px;
 	}
 	#displayBox .container:after {
 		content: ".";
 		height: 0; display: block; visibility: hidden;
 		clear: both;
+		
+		margin-bottom: -20px;
 	}
 	#displayBox .container .box {
 		float: left;
