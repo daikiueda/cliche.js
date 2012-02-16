@@ -1,3 +1,0 @@
-[submodule "htdocs/php-lib/minify-proxy"]
-	path = htdocs/php-lib/minify-proxy
-	url = https://daikiueda@github.com/daikiueda/Trio.php.git
