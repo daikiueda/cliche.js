@@ -61,6 +61,9 @@
 	
 	/* 対象要素の初期化 */
 	$.fn.displayBox = function( myOption ){
+		if( !this.length ){
+			return this;
+		}
 		
 		var childElms = $( "> *", this );
 		
