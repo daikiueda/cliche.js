@@ -51,10 +51,10 @@
 	}
 
 
-	/**
+	/*
 	 * 初期表示処理
 	 */
 	$( function(){
-		$( "a[href]" ).imgRollOver();
+		$( "a[href], button" ).imgRollOver();
 	} );
 })();

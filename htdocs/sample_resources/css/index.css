@@ -83,8 +83,16 @@ cliche.js 解説ページ
 /* =========================================================
 ■個別のサンプルのレイアウトやスタイル
 ========================================================= */
+	button.imgButton {
+		border: none;
+		background: none;
+		padding: 0;
+		
+		cursor: pointer;
+	}
+
 /* -------------------------------------
-▽スタイル＞
+▽スタイル＞displayBox
 ------------------------------------- */
 	#displayBox .container {
 		zoom: 1;
@@ -116,5 +124,4 @@ cliche.js 解説ページ
 		vertical-align: middle;
 		line-height: 1.334;
 	}
-
 
