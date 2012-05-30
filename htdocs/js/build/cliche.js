@@ -14,4 +14,5 @@ $.fn.displayBox=function(myOption){if(!this.length){return this;}
 var childElms=$("> *",this);var testElm,targetElms=[],testOffsetTop;var currentPos=$(childElms.get(0)).offset().top;for(var i=0;testElm=childElms.get(i);i++){testOffsetTop=$(testElm).offset().top;if(Math.abs(currentPos-testOffsetTop)<1){targetElms.push(testElm);}
 else{setAutoAdjust(targetElms,myOption);targetElms=[];targetElms.push(testElm);currentPos=testOffsetTop;}}
 setAutoAdjust(targetElms,myOption);return this;}
-$(function(){$(".displayBox").displayBox();});})();
+$(function(){$(".displayBox").displayBox();});})();(function(){$.fn.fixTableMarginForFx=function(){if(!$.browser.mozilla){return this;}
+return this.each(function(){var targetTable=$(this);targetTable.wrap('<div class="fn_fixTableMarginforFx" />');targetTable.parent().css({marginTop:targetTable.css("marginTop"),marginBottom:targetTable.css("marginBottom")});targetTable.css({marginTop:0,marginBottom:0});});};$(function(){if($.browser.mozilla){$("table.general").fixTableMarginForFx();}});})();

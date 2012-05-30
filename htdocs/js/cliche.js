@@ -16,7 +16,8 @@
 		"source/ui/jquery.imgRollOver.js",
 		
 		"source/event/jquery.triggerOnFontSizeChange.js",
-		"source/style/jquery.displayBox.js"
+		"source/style/jquery.displayBox.js",
+		"source/style/jquery.fixTableMarginForFx.js"
 	];
 
 	(function(){
