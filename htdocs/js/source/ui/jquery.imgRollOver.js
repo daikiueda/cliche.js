@@ -19,7 +19,9 @@
 						return (/_off.(gif|jpg|png)/).test( this.src );
 					} );
 			
-			if( targetImgs.length == 0 ) return;
+			if( targetImgs.length == 0 ){
+				return this;
+			}
 			
 			targetImgs.each( function(){
 				var hoverImg =
@@ -46,7 +48,9 @@
 				.mouseleave( function(){
 					$( "img.hover", this ).animate( { opacity: 0 }, 150 );
 					$( "img.default", this ).animate( { opacity: 1 }, 150 );
-				} )
+				} );
+			
+			return this;
 		})
 	}
 
