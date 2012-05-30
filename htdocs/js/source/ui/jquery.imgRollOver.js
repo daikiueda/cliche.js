@@ -19,8 +19,7 @@
 						return (/_off.(gif|jpg|png)/).test( this.src );
 					} );
 			
-			if( targetImgs.length == 0 ){
-				return this;
+			if( targetImgs.length == 0 ) return;
 			}
 			
 			targetImgs.each( function(){
@@ -49,10 +48,8 @@
 					$( "img.hover", this ).animate( { opacity: 0 }, 150 );
 					$( "img.default", this ).animate( { opacity: 1 }, 150 );
 				} );
-			
-			return this;
-		})
-	}
+		});
+	};
 
 
 	/*
