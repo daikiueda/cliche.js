@@ -2,9 +2,8 @@
  * ui/jquery.inPageLink.js
  * ページ内リンクに、目標位置へのスクロール効果を追加します。
  */
-
-(function(){
-	/**
+( function(){
+	/* 
 	 * 設定項目
 	 */
 	/** 1ms秒毎の移動距離（px） */
@@ -62,7 +61,7 @@
 				return false;
 			} );
 		});
-	}
+	};
 
 
 	/**
@@ -71,4 +70,4 @@
 	$( function(){
 		$( "a[href]" ).inPageLink();
 	} );
-})();
+} )();

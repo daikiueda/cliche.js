@@ -3,7 +3,6 @@
  * firefoxにおける、tableのmargin相殺に関するバグの手当て
  */
 ( function(){
-
 	/* tableのmargin相殺に関するバグの手当て */
 	$.fn.fixTableMarginForFx = function(){
 		if( !$.browser.mozilla ){
@@ -36,4 +35,4 @@
 			$( "table.general" ).fixTableMarginForFx();
 		}
 	} );
-})();
+} )();

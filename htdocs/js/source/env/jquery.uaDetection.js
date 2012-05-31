@@ -6,8 +6,7 @@
  * - body.ua_Mac
  * - body.ua_Win
  */
-
-(function(){
+( function(){
 
 	/**
 	 * 初期表示処理
@@ -28,6 +27,5 @@
 		else {
 			$("body").addClass("ua_Win");
 		}
-	});
-
-})();
+	} );
+} )();

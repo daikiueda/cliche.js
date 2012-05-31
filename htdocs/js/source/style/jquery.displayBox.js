@@ -2,12 +2,10 @@
  * style/jquery.displayBox.js
  * 横に並んだカラムの高さを、最長の要素に揃えます。
  */
-
-(function(){
+( function(){
 	
 	
 	function adjustHeight( myTargetElms, myOption ){
-		
 		
 		if( myOption && myOption.inner ){
 			if( $.isArray( myOption.inner ) ){
@@ -94,7 +92,7 @@
 		
 		
 		return this;
-	}
+	};
 
 
 	/**
@@ -103,4 +101,4 @@
 	$( function(){
 		$( ".displayBox" ).displayBox();
 	} );
-})();
+} )();

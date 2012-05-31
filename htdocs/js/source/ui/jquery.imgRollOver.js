@@ -2,8 +2,7 @@
  * ui/jquery.imgRollOver.js
  * <a>の子要素の画像に、ロールオーバー効果を追加します。
  */
-
-(function(){
+( function(){
 
 	/* 画像のロールオーバー */
 	$.fn.imgRollOver = function(){
@@ -20,14 +19,13 @@
 					} );
 			
 			if( targetImgs.length == 0 ) return;
-			}
 			
 			targetImgs.each( function(){
 				var hoverImg =
 					$("<img>")
 						.attr( "src", this.src.replace( "_off.", "_on." ) )
 						.addClass("hover")
-						.css( { position: "absolute", opacity: 0 } );
+						.css( { position: "absolute", opacity: 0, zIndex: 1 } );
 				
 				$(this)
 					.addClass("default")
@@ -58,4 +56,4 @@
 	$( function(){
 		$( "a[href], button" ).imgRollOver();
 	} );
-})();
+} )();

@@ -2,9 +2,8 @@
  * event/jquery.triggerOnFontSizeChange.js
  * フォントサイズの変更を検知し、body要素のfontSizeChangeイベントを発行します。
  */
-
-(function(){
-	/**
+( function(){
+	/* 
 	 * 設定項目
 	 */
 	/** 検知の間隔（ms） */
@@ -34,4 +33,4 @@
 			}
 		}, TEST_INTERVAL );
 	} );
-})();
+} )();
