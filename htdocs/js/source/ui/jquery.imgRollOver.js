@@ -24,11 +24,11 @@
 				var hoverImg =
 					$("<img>")
 						.attr( "src", this.src.replace( "_off.", "_on." ) )
-						.addClass("hover")
+						.addClass("fn_hover")
 						.css( { position: "absolute", opacity: 0, zIndex: 1 } );
 				
 				$(this)
-					.addClass("default")
+					.addClass("fn_default")
 					.after( hoverImg );
 				
 				hoverImg.css( {
@@ -39,12 +39,12 @@
 			
 			$(this)
 				.mouseenter( function(){
-					$( "img.hover", this ).animate( { opacity: 1 }, 150 );
-					$( "img.default", this ).animate( { opacity: 0 }, 150 );
+					$( "img.fn_hover", this ).animate( { opacity: 1 }, 150 );
+					$( "img.fn_default", this ).animate( { opacity: 0 }, 150 );
 				} )
 				.mouseleave( function(){
-					$( "img.hover", this ).animate( { opacity: 0 }, 150 );
-					$( "img.default", this ).animate( { opacity: 1 }, 150 );
+					$( "img.fn_hover", this ).animate( { opacity: 0 }, 150 );
+					$( "img.fn_default", this ).animate( { opacity: 1 }, 150 );
 				} );
 		});
 	};

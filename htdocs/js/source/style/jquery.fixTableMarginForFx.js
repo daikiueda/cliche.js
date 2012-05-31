@@ -3,6 +3,13 @@
  * firefoxにおける、tableのmargin相殺に関するバグの手当て
  */
 ( function(){
+	/* 
+	 * 設定項目
+	 */
+	/** デフォルトで処理する対象の指定（セレクター） */
+	var DEFAULT_TARGET =  "table.general";
+
+
 	/* tableのmargin相殺に関するバグの手当て */
 	$.fn.fixTableMarginForFx = function(){
 		if( !$.browser.mozilla ){
@@ -32,7 +39,7 @@
 	 */
 	$( function(){
 		if( $.browser.mozilla ){
-			$( "table.general" ).fixTableMarginForFx();
+			$( DEFAULT_TARGET ).fixTableMarginForFx();
 		}
 	} );
 } )();
