@@ -15,7 +15,7 @@
 		"source/ui/jquery.inPageLink.js",
 		"source/ui/jquery.imgRollOver.js",
 		
-		"source/event/jquery.triggerOnFontSizeChange.js",
+		"source/event/jquery.onFontSizeChange.js",
 		"source/style/jquery.displayBox.js",
 		"source/style/jquery.fixTableMarginForFx.js"
 	];
