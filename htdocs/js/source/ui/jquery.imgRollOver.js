@@ -22,10 +22,18 @@
 			
 			targetImgs.each( function(){
 				var hoverImg =
-					$("<img>")
-						.attr( "src", this.src.replace( "_off.", "_on." ) )
+					$("<span>")
+						.css({
+							display: "block",
+							
+							width: $( this ).width() + "px",
+							height: $( this ).height() + "px",
+							backgroundImage: "url('" + this.src.replace( "_off.", "_on." ) + "')",
+							
+							position: "absolute",
+							opacity: 0
+						})
 						.addClass("fn_hover")
-						.css( { position: "absolute", opacity: 0, zIndex: 1 } );
 				
 				$(this)
 					.addClass("fn_default")
@@ -39,11 +47,11 @@
 			
 			$(this)
 				.mouseenter( function(){
-					$( "img.fn_hover", this ).animate( { opacity: 1 }, 150 );
+					$( "span.fn_hover", this ).animate( { opacity: 1 }, 150 );
 					$( "img.fn_default", this ).animate( { opacity: 0 }, 150 );
 				} )
 				.mouseleave( function(){
-					$( "img.fn_hover", this ).animate( { opacity: 0 }, 150 );
+					$( "span.fn_hover", this ).animate( { opacity: 0 }, 150 );
 					$( "img.fn_default", this ).animate( { opacity: 1 }, 150 );
 				} );
 		});
