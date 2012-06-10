@@ -48,7 +48,7 @@
 				var targetPos = targetElm.offset().top;
 				var targetDistance = Math.abs( $('html, body').scrollTop() - targetPos );
 
-				var animateTime = targetDistance * SCROLL_VELOCITY;
+				var animateTime = targetDistance / SCROLL_VELOCITY;
 				animateTime = Math.max( animateTime, MIN_DURATION );
 				animateTime = Math.min( animateTime, MAX_DURATION );
 
