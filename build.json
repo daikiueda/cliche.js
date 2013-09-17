@@ -1,0 +1,8 @@
+{
+  "src": [
+      "src/env/*.js",
+      "src/event/*.js",
+      "src/style/*.js",
+      "src/ui/*.js"
+  ]
+}

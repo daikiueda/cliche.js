@@ -15,17 +15,20 @@
 		var ua =navigator.userAgent;
 
 		if( ua.indexOf('iPhone') > -1 || ua.indexOf('iPad') > -1 ){
-			$("body").addClass("ua_iOS");
+			$("body").addClass("ua-iOS");
+		}
+		else if( ua.indexOf('Android') > -1 ){
+			$("body").addClass("ua-Android");
 		}
 		else {
-			$("body").addClass("ua_PC");
+			$("body").addClass("ua-PC");
 		}
 
 		if( ua.indexOf('Mac OS X') > -1 ){
-			$("body").addClass("ua_Mac");
+			$("body").addClass("ua-Mac");
 		}
 		else {
-			$("body").addClass("ua_Win");
+			$("body").addClass("ua-Win");
 		}
 	} );
 } )();

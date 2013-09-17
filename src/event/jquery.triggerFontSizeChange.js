@@ -1,5 +1,5 @@
 /**
- * event/jquery.triggerOnFontSizeChange.js
+ * event/jquery.triggerFontSizeChange.js
  * フォントサイズの変更を検知し、body要素のfontSizeChangeイベントを発行します。
  */
 ( function(){

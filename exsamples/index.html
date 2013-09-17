@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>cliche.js</title>
-		<link rel="stylesheet" href="sample_resources/css/index.css">
+		<link rel="stylesheet" href="css/index.css">
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -14,7 +14,7 @@
 		<article>
 			<h1 id="page_top">cliche.js</h1>
 			
-			<p><a href="js/build/cliche.js">js/build/cliche.js</a></p>
+			<p><a href="js/cliche.js">js/cliche.js</a></p>
 			
 			
 			<section id="env">
@@ -37,10 +37,11 @@
 					<h3>env/uaDetection.js</h3>
 					<p>UAを判別し、下記のclassをbody要素に付与します。</p>
 					<ul>
-						<li>body.ua_iOS</li>
-						<li>body.ua_PC</li>
-						<li>body.ua_Mac</li>
-						<li>body.ua_Win</li>
+						<li>body.ua-iOS</li>
+						<li>body.ua-Android</li>
+						<li>body.ua-PC</li>
+						<li>body.ua-Mac</li>
+						<li>body.ua-Win</li>
 					</ul>
 					
 					<section class="sample">
@@ -65,24 +66,6 @@
 						</ul>
 					</section>
 				</section>
-
-				<section id="imgRollOver">
-					<h3>ui/jquery.imgRollOver.js</h3>
-					<p>&lt;a&gt;の子要素の画像に、ロールオーバーの演出を追加します。</p>
-					
-					<section class="sample">
-						<h4>サンプル</h4>
-						<p style="float: left; margin-right: 20px;"><a href="#" onclick="return false;"><img src="sample_resources/images/button_off.gif" width="240" height="60" alt="button"></a></p>
-						<p style="float: left;"><a href="#" onclick="return false;"><img src="sample_resources/images/button_off.gif" width="240" height="60" alt="button"></a></p>
-						<p style="clear: left; "><a href="#" onclick="return false;"><img src="sample_resources/images/button_off.gif" width="240" height="60" alt="button"></a></p>
-						<p style="position:absolute; margin-top: -80px; margin-left: 260px;"><a href="#" onclick="return false;"><img src="sample_resources/images/button_off.gif" width="240" height="60" alt="button"></a></p>
-
-						<form>
-							<p><button onclick="return false;" class="imgButton"><img src="sample_resources/images/button_off.gif" width="240" height="60" alt="button"></button></p>
-						</form>
-
-					</section>
-				</section>
 			</section>
 			
 			
@@ -90,7 +73,7 @@
 				<h2>イベント</h2>
 				
 				<section id="onFontSizeChange">
-					<h3>event/jquery.onFontSizeChange.js</h3>
+					<h3>event/jquery.triggerFontSizeChange</h3>
 					<p>フォントサイズの変更を検知し、body要素のfontSizeChangeイベントを発行します。</p>
 					<script type="text/javascript">
 						$( function(){
